@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: darkgray;
+    font-family: 'Average', serif;
+}
+.container {
+    margin: 0 auto;
+    width:1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.header {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 100%;
+    padding-left:50px;
+    padding-right:50px;
+}
+.logo {
+    width:20%;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.name {
+    width:30%;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Fjalla One', sans-serif;
+}
+.menu {
+    width:50%;
+    display: flex;
+    flex-direction: row;
+}
+li {
+    margin-right:15px;
+    list-style: none;
+    min-width:80px;
+}
+.nav {
+    text-decoration: none;
+    color:#1a3300;
+}
+.nav:hover {
+    text-decoration: none;
+    color:#8a0000;
+}
+.main {
+    width: 80%;
+    flex-direction: column;
+}
+.sec {
+    font-family: 'Fjalla One', sans-serif;
+    color:#1a3300;
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
