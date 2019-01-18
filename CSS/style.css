@@ -35,9 +35,11 @@ body {
     font-family: 'Fjalla One', sans-serif;
 }
 .menu {
-    width:50%;
+    
     display: flex;
-    flex-direction: row;
+}
+#nav {
+    width:50%;
 }
 li {
     margin-right:15px;
@@ -59,8 +61,10 @@ li {
 .sec {
     font-family: 'Fjalla One', sans-serif;
     color:#1a3300;
+    min-height: auto; 
 }
 footer {
+    width:100%;
     text-align: center;
     margin-top: 50px;
 }
