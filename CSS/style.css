@@ -1,8 +1,13 @@
+root {
+    --text:#000;
+    --hover:red;
+    --background:white;
+}
 * {
     box-sizing: border-box;
 }
 body {
-    background-color: darkgray;
+    background-color:var(--background);
     font-family: 'Average', serif;
 }
 .container {
@@ -22,24 +27,29 @@ body {
     padding-right:50px;
 }
 .logo {
-    width:20%;
+    width:30%;
     justify-content: flex-start;
     padding-left: 10px;
     padding-right: 10px;
 }
 .name {
-    width:30%;
+    width:50%;
     justify-content: flex-start;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: 'Fjalla One', sans-serif;
 }
 .menu {
-    
     display: flex;
 }
+h1 {
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+}
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+}
 #nav {
-    width:50%;
+    width:70%;
 }
 li {
     margin-right:15px;
@@ -48,23 +58,45 @@ li {
 }
 .nav {
     text-decoration: none;
-    color:#1a3300;
+    color:var(--text);
 }
 .nav:hover {
     text-decoration: none;
-    color:#8a0000;
+    color:rgb(230, 0, 0);
 }
 .main {
     width: 80%;
     flex-direction: column;
 }
 .sec {
-    font-family: 'Fjalla One', sans-serif;
-    color:#1a3300;
+    width:100%;
+    color:var(--text);
     min-height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 footer {
     width:100%;
     text-align: center;
     margin-top: 50px;
+}
+.about {
+    width:50%;
+    height: auto;
+}
+.sec_h1 {
+    width: 100%;
+}
+.img_section {
+    max-width: 25vw;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item_skill {
+    padding: 10px;
+    width: 33%;
 }
